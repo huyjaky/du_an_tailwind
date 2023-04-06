@@ -11,12 +11,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        roboto: '--font-roboto',
-        montserrat: '--font-montserrat'
-      }
-    },
+    extend: {},
   },
   plugins: [],
 };
