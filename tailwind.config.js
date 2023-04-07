@@ -16,9 +16,10 @@ module.exports = {
         coffee: '#dbc1ac'
       },
       screens: {
-        tablet: { 'max': '1110px' },
+        tablet: { max: '1110px' },
         laptop: '1110px',
-        desktop: '1280px'
+        desktop: '1280px',
+        mobile: { max: '400px' }
       },
       keyframes: {
         slideDown: {
@@ -28,14 +29,22 @@ module.exports = {
         closeSlideDown: {
           '0%': { transform: 'translateY(0px)' },
           '100%': { transform: 'translateY(-300px)' }
-        }
+        },
+
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '75%': { transform: 'translateX(-300%)' },
+          '100%': { transform: 'translateX(0%)' }
+        },
+
       },
-      backgroundImage: {
-        coffeeImg: 'url(\"https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80\")'
+      gridAutoColumns: {
+        max100: '100%'
       },
       animation: {
         slideDown: 'slideDown .4s ease-in-out',
-        closeSlideDown: 'closeSlideDown .4s ease-in-out'
+        closeSlideDown: 'closeSlideDown .4s ease-in-out',
+        marquee: 'marquee 40s linear infinite',
       }
     }
   },
