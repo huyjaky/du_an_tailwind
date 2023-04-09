@@ -17,11 +17,11 @@ module.exports = {
         coffee2: '#964315'
       },
       screens: {
-        mobile: {max: '500px'},
-        tabletTemp: {max: '1110px', min: '500px'},
+        mobile: { max: '500px' },
+        tabletTemp: { max: '1110px', min: '500px' },
         tablet: { max: '1110px' },
         laptop: '1110px',
-        desktop: '1280px',
+        desktop: '1280px'
       },
       keyframes: {
         slideDown: {
@@ -40,19 +40,19 @@ module.exports = {
         slideUpTag: {
           '0%': { transform: 'translateY(150px)' },
           '100%': { transform: 'translateY(0px)' }
-        }
+        },
       },
       animation: {
         slideDown: 'slideDown .4s ease-in-out',
         closeSlideDown: 'closeSlideDown .4s ease-in-out',
         marquee: 'marquee 40s linear infinite',
-        slideUpTag: 'slideUpTag 1s ease-in-out'
+        slideUpTag: 'slideUpTag 1s ease-in-out',
       },
       gridTemplateColumns: {
         13: 'repeat(auto-fit, minmax(200px,1fr))',
         14: '1fr 1fr 1fr 1fr',
         15: '1fr 1fr',
-        16: '1fr',
+        16: '1fr'
       },
       gridTemplateRows: {
         7: '300px 60px 300px',
@@ -63,24 +63,9 @@ module.exports = {
         max100: '100%'
       },
       gridTemplateAreas: {
-        layoutDesktop: [
-          'h1 h1 h2 h3',
-          'h4 h5 h2 h3',
-          'h4 h5 h6 h6',
-        ],
-        layoutTablet: [
-          'h1 h2',
-          'h3 h4',
-          'h5 h6'
-        ],
-        layoutMobile: [
-          'h1',
-          'h2',
-          'h3',
-          'h4',
-          'h5',
-          'h6',
-        ]
+        layoutDesktop: ['h1 h1 h2 h3', 'h4 h5 h2 h3', 'h4 h5 h6 h6'],
+        layoutTablet: ['h1 h2', 'h3 h4', 'h5 h6'],
+        layoutMobile: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
       }
     }
   },

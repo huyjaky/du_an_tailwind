@@ -15,7 +15,7 @@ const Featured_mugs = () => {
   const tagHide = () => {};
 
   return (
-    <div className="w-[70%] h-full tablet:w-full">
+    <div className="w-[70%] h-full tablet:w-full mt-32 mb-40">
       <div className="w-full h-full grid grid-cols-13 grid-rows-1 gap-5 ">
         {arrImg.map((item, index) => {
           return (
@@ -31,7 +31,7 @@ const Featured_mugs = () => {
                 {/* tag */}
                 <div
                   className="bg-slate-100 w-[60%] h-[10%] -bottom-40 absolute mx-[20%] mb-[18%] flex
-                  group-hover:animate-slideUpTag group-hover:bottom-0
+                  group-hover:bottom-0 transition-all duration-500
                 "
                   id="tag">
                   <Link href={item.link} className="m-auto text-coffee2 font-semibold">
