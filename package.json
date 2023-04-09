@@ -25,6 +25,7 @@
     "use-debounce": "^9.0.3"
   },
   "devDependencies": {
+    "@savvywombat/tailwindcss-grid-areas": "^3.0.1",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.37.0",
     "eslint-config-prettier": "^8.8.0",

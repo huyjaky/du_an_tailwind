@@ -1,4 +1,6 @@
+import Featured_mugs from '@/components/featured_mugs/Featured_mugs';
 import Header from '@/components/head/Header';
+import More_products from '@/components/more_products/More_products';
 import Slider from '@/components/slider/Slider';
 import Story from '@/components/story/Story';
 import Head from 'next/head';
@@ -39,17 +41,21 @@ export default function Home() {
         <Header />
 
         <main>
-          <div className="Slider">
+          <div className="Slider my-28">
             <Slider />
           </div>
 
-          <div className="Story">
+          <div className="Story h-fit w-full flex justify-center my-28">
             <Story />
           </div>
 
-          <div className="featured-mugs">featured-mugs</div>
+          <div className="featured-mugs flex justify-center">
+            <Featured_mugs />
+          </div>
 
-          <div className="more-products">more-products</div>
+          <div className="more-products w-full h-fit">
+            <More_products />
+          </div>
 
           <div className="coffe-mgz">coffe-mgz</div>
 

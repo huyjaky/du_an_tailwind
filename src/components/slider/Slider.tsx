@@ -9,7 +9,7 @@ const Slider = () => {
   ];
 
   return (
-    <div className=" overflow-hidden mt-[30px] rounded-[30px] relative ">
+    <div className=" overflow-hidden rounded-[30px] relative ">
       <div
         className="w-full h-[500px] rounded-[30px] text-black grid grid-flow-col auto-cols-max100
         animate-marquee snap-proximity

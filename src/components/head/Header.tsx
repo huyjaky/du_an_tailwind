@@ -29,11 +29,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="py-6 mx-10 relative mobile:mx-0">
+    <header className="py-6 mx-10 relative tablet:mx-0">
       <nav className="flex flex-row justify-between items-center ">
         <div
-          className="basis-1/6/6 font-semibold cursor-pointer
-              tablet:text-[30px] mobile:text-[20px]
+          className="basis-1/6 font-semibold cursor-pointer
+              tablet:text-[15px]
             "
         >
           CoffeeStyle.
@@ -57,8 +57,8 @@ const Header = () => {
         <div className="flex">
           <Link
             href={'/cart'}
-            className="basis-1/6 flex justify-start text-gray-500 tablet:text-[30px]
-                  tablet:text-gray-900 mobile:text-[20px]"
+            className="basis-1/6 flex justify-start text-gray-500 tablet:text-[18px]
+                  tablet:text-gray-900"
           >
             <ul className="flex items-center font-semibold ct-navlink">
               <svg
