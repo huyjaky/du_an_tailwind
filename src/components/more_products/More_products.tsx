@@ -47,7 +47,7 @@ const More_products = () => {
   ];
 
   return (
-    <div className="w-full h-[800px] mt-16 text-center">
+    <div className="w-full h-fit mt-16 text-center">
       {/* title */}
       <span className="font-semibold text-[30px]">More Products</span>
 
@@ -66,7 +66,7 @@ const More_products = () => {
               <div className="absolute top-0 h-full w-full bg-slate-500 opacity-0 transition-opacity duration-700 group-hover:opacity-40 "></div>
 
               <div
-                className="absolute w-full h-[40%] group-hover:bottom-0 -bottom-40 transition-all
+                className="absolute w-full h-[40%] group-hover:bottom-0 -bottom-60 transition-all
                 duration-500 flex
               ">
                 <div className="h-full w-[50%] m-auto ">

@@ -1,6 +1,8 @@
 import Featured_mugs from '@/components/featured_mugs/Featured_mugs';
 import Header from '@/components/head/Header';
+import Magazine from '@/components/magazine/Magazine';
 import More_products from '@/components/more_products/More_products';
+import Parallax from '@/components/parallax/Parallax';
 import Slider from '@/components/slider/Slider';
 import Story from '@/components/story/Story';
 import Head from 'next/head';
@@ -57,9 +59,18 @@ export default function Home() {
             <More_products />
           </div>
 
-          <div className="coffe-mgz">coffe-mgz</div>
+          <div className="coffe-mgz w-full h-fit">
+            <Magazine />
+          </div>
 
-          <div className="life-style">life-style</div>
+          <div className='coffee-prx h-fit w-full'>
+            <Parallax />
+          </div>
+
+          <div className="life-style">
+            life-style
+          </div>
+
         </main>
 
         <footer>footer</footer>

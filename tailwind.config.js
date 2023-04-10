@@ -40,24 +40,26 @@ module.exports = {
         slideUpTag: {
           '0%': { transform: 'translateY(150px)' },
           '100%': { transform: 'translateY(0px)' }
-        },
+        }
       },
       animation: {
         slideDown: 'slideDown .4s ease-in-out',
         closeSlideDown: 'closeSlideDown .4s ease-in-out',
         marquee: 'marquee 40s linear infinite',
-        slideUpTag: 'slideUpTag 1s ease-in-out',
+        slideUpTag: 'slideUpTag 1s ease-in-out'
       },
       gridTemplateColumns: {
         13: 'repeat(auto-fit, minmax(200px,1fr))',
         14: '1fr 1fr 1fr 1fr',
         15: '1fr 1fr',
-        16: '1fr'
+        16: '1fr',
+        17: '1fr 1fr 1fr'
       },
       gridTemplateRows: {
         7: '300px 60px 300px',
         8: '500px 500px 500px',
-        9: '500px 500px 500px 500px 500px 500px'
+        9: '500px 500px 500px 500px 500px 500px',
+        10: '200px 200px'
       },
       gridAutoColumns: {
         max100: '100%'
@@ -65,8 +67,21 @@ module.exports = {
       gridTemplateAreas: {
         layoutDesktop: ['h1 h1 h2 h3', 'h4 h5 h2 h3', 'h4 h5 h6 h6'],
         layoutTablet: ['h1 h2', 'h3 h4', 'h5 h6'],
-        layoutMobile: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']
+        layoutMobile: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+        layoutMagazine: [
+          'h1 h1 h2',
+          'h1 h1 h3'
+        ],
+        layoutMagazine2: [
+          'h1 h1',
+          'h1 h1',
+          'h2 h3'
+        ],
+      },
+      backgroundImage: {
+        parallax: 'url(\"https://images.unsplash.com/photo-1507226983735-a838615193b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\")'
       }
+
     }
   },
   plugins: [require('@savvywombat/tailwindcss-grid-areas')]
